@@ -8,6 +8,10 @@ const MailList = () => {
       <div className="mailInputContainer">
         <input type="text" placeholder="Your Email" />
         <button>Subscribe</button>
+        <div className="checkbox">
+          <input type="checkbox" />
+          <span>Send me a link to get the FREE MkBooking.app!</span>
+        </div>
       </div>
     </div>
   );

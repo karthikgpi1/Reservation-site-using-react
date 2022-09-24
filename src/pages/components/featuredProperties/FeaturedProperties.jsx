@@ -11,7 +11,7 @@ const FeaturedProperties = () => {
         />
         <span className="fpName">ApartHotel Stare Miasto</span>
         <span className="fpCity">Madrid</span>
-        <span className="fpPrice">Starting from $120</span>
+        <span className="fpPrice">Starting from $150</span>
         <div className="fpRating">
           <button>8.9</button>
           <span>Excellent</span>
@@ -39,7 +39,7 @@ const FeaturedProperties = () => {
         />
         <span className="fpName">ApartHotel Stare Miasto</span>
         <span className="fpCity">Madrid</span>
-        <span className="fpPrice">Starting from $120</span>
+        <span className="fpPrice">Starting from $180</span>
         <div className="fpRating">
           <button>8.9</button>
           <span>Excellent</span>
@@ -53,7 +53,7 @@ const FeaturedProperties = () => {
         />
         <span className="fpName">ApartHotel Stare Miasto</span>
         <span className="fpCity">Madrid</span>
-        <span className="fpPrice">Starting from $120</span>
+        <span className="fpPrice">Starting from $280</span>
         <div className="fpRating">
           <button>8.9</button>
           <span>Excellent</span>

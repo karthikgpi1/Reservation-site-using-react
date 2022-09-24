@@ -30,3 +30,17 @@
     cursor: pointer;
     padding: 3px;
 }
+
+.checkbox{
+    margin-top: 10px;
+}
+
+.checkbox>input{
+    margin-right: 10px;
+    background-color: #003580;
+    cursor: pointer;
+}
+
+.checkbox>span{
+    font-weight: 300;
+}

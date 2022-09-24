@@ -11,7 +11,7 @@ const Featured = () => {
         />
         <div className="featuredTitles">
           <h1>Dubai</h1>
-          <h2>123 properties</h2>
+          <h2>320 properties</h2>
         </div>
       </div>
       <div className="featuredItem">
@@ -22,7 +22,7 @@ const Featured = () => {
         />
         <div className="featuredTitles">
           <h1>Maldives</h1>
-          <h2>123 properties</h2>
+          <h2>234 properties</h2>
         </div>
       </div>
       <div className="featuredItem">
@@ -32,7 +32,7 @@ const Featured = () => {
           className="featuredImg"
         />
         <div className="featuredTitles">
-          <h1>delhi</h1>
+          <h1>Delhi</h1>
           <h2>123 properties</h2>
         </div>
       </div>

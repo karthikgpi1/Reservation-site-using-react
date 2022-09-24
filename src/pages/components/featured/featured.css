@@ -9,7 +9,7 @@
 
   .featuredItem{
     position: relative;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 10px;
     overflow: hidden;
     height: 250px;
@@ -23,6 +23,19 @@
 
  .featuredTitles{
     position: absolute;
-    left: 40px;
-    top: 170px;
+    /* left: 40px; */
+    top: 160px;
+    background-color: rgba(74, 80, 80, 0.2);
+    width: 100%;
 } 
+
+.featuredTitles>h2{
+    font-weight: 600;
+    margin-left: 40px;
+
+}
+
+.featuredTitles>h1{
+    margin-left: 40px;
+
+}
