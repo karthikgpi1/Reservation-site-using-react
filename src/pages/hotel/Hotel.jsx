@@ -14,31 +14,43 @@ import { faCircleXmark } from "@fortawesome/free-regular-svg-icons";
 
 const Hotel = () => {
   const [slideNumber, setSlideNumber] = useState(0);
-  const [open, setopen] = useState(false);
+  const [open, setOpen] = useState(false);
   const photos = [
     {
-      src: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=600",
+      src: "https://images.pexels.com/photos/1643384/pexels-photo-1643384.jpeg?cs=srgb&dl=pexels-vecislavas-popa-1643384.jpg&fm=jpg",
     },
     {
-      src: "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?auto=compress&cs=tinysrgb&w=600",
+      src: "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?cs=srgb&dl=pexels-vecislavas-popa-1571453.jpg&fm=jpg",
     },
     {
-      src: "https://images.pexels.com/photos/276724/pexels-photo-276724.jpeg?auto=compress&cs=tinysrgb&w=600",
+      src: "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?cs=srgb&dl=pexels-mark-mccammon-1080721.jpg&fm=jpg",
     },
     {
-      src: "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=600",
+      src: "https://images.pexels.com/photos/161758/governor-s-mansion-montgomery-alabama-grand-staircase-161758.jpeg?cs=srgb&dl=pexels-pixabay-161758.jpg&fm=jpg",
     },
     {
-      src: "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=600",
+      src: "https://images.pexels.com/photos/259580/pexels-photo-259580.jpeg?cs=srgb&dl=pexels-pixabay-259580.jpg&fm=jpg",
     },
     {
-      src: "https://images.pexels.com/photos/667838/pexels-photo-667838.jpeg?auto=compress&cs=tinysrgb&w=600",
+      src: "https://images.pexels.com/photos/37347/office-sitting-room-executive-sitting.jpg?cs=srgb&dl=pexels-pixabay-37347.jpg&fm=jpg",
     },
   ];
 
   const handleOpen = (i) => {
     setSlideNumber(i);
-    setopen(true);
+    setOpen(true);
+  };
+
+  const handleMove = (direction) => {
+    let newSlideNumber;
+
+    if (direction === "l") {
+      newSlideNumber = slideNumber === 0 ? 5 : slideNumber - 1;
+    } else {
+      newSlideNumber = slideNumber === 5 ? 0 : slideNumber + 1;
+    }
+
+    setSlideNumber(newSlideNumber);
   };
 
   return (
@@ -48,12 +60,24 @@ const Hotel = () => {
       <div className="hotelContainer">
         {open && (
           <div className="slider">
-            <FontAwesomeIcon icon={faCircleXmark} />
-            <FontAwesomeIcon icon={faCircleArrowLeft} />
-            <div className="slideWrapper">
+            <FontAwesomeIcon
+              icon={faCircleXmark}
+              className="close"
+              onClick={() => setOpen(false)}
+            />
+            <FontAwesomeIcon
+              icon={faCircleArrowLeft}
+              className="arrow"
+              onClick={() => handleMove("l")}
+            />
+            <div className="sliderWrapper">
               <img src={photos[slideNumber].src} alt="" className="sliderImg" />
             </div>
-            <FontAwesomeIcon icon={faCircleArrowRight} />
+            <FontAwesomeIcon
+              icon={faCircleArrowRight}
+              className="arrow"
+              onClick={() => handleMove("r")}
+            />
           </div>
         )}
         <div className="hotelWrapper">
@@ -71,9 +95,9 @@ const Hotel = () => {
           </span>
           <div className="hotelImages">
             {photos.map((photo, i) => (
-              <div className="hotelImgWrapper">
+              <div key={i} className="hotelImgWrapper">
                 <img
-                  onClick={(i) => handleOpen(i)}
+                  onClick={() => handleOpen(i)}
                   src={photo.src}
                   alt=""
                   className="hotelImg"
