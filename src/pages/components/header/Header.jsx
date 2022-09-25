@@ -13,10 +13,10 @@ import { DateRange } from "react-date-range";
 import "react-date-range/dist/styles.css"; // main css file
 import "react-date-range/dist/theme/default.css"; // theme css file
 import { format } from "date-fns";
-import { navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Header = ({ type }) => {
-  const [destination, setDestination] = useState("");
+  const [destination, setDestination] = useState();
   const [openDate, setOpenDate] = useState(false);
   const [date, setDate] = useState([
     {
