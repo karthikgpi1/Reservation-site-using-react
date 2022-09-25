@@ -23,16 +23,16 @@ const Hotel = () => {
       src: "https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?cs=srgb&dl=pexels-vecislavas-popa-1571453.jpg&fm=jpg",
     },
     {
-      src: "https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?cs=srgb&dl=pexels-mark-mccammon-1080721.jpg&fm=jpg",
+      src: "https://images.pexels.com/photos/261045/pexels-photo-261045.jpeg?cs=srgb&dl=pexels-pixabay-261045.jpg&fm=jpg",
     },
     {
-      src: "https://images.pexels.com/photos/161758/governor-s-mansion-montgomery-alabama-grand-staircase-161758.jpeg?cs=srgb&dl=pexels-pixabay-161758.jpg&fm=jpg",
+      src: "https://images.pexels.com/photos/1910472/pexels-photo-1910472.jpeg?cs=srgb&dl=pexels-christa-grover-1910472.jpg&fm=jpg",
     },
     {
       src: "https://images.pexels.com/photos/259580/pexels-photo-259580.jpeg?cs=srgb&dl=pexels-pixabay-259580.jpg&fm=jpg",
     },
     {
-      src: "https://images.pexels.com/photos/37347/office-sitting-room-executive-sitting.jpg?cs=srgb&dl=pexels-pixabay-37347.jpg&fm=jpg",
+      src: "https://images.pexels.com/photos/6207819/pexels-photo-6207819.jpeg?cs=srgb&dl=pexels-max-vakhtbovych-6207819.jpg&fm=jpg",
     },
   ];
 
